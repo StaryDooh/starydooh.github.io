@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <title>Strona w budowie</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programy StaryDooh – darmowe programy edukacyjne i narzędzia dla Windows</title>
+  <meta name="description" content="Darmowe programy dla szkoły i domu: gry edukacyjne, prosty edytor tekstu dla dzieci oraz edytory HTML/CSS i Python do nauki programowania. Pobierz najnowszą wersję z GitHub.">
+  <link rel="canonical" href="https://starydooh.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Programy StaryDooh">
+  <meta property="og:description" content="Darmowe programy edukacyjne i narzędzia dla Windows.">
+  <meta property="og:url" content="https://starydooh.github.io/">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Strona w budowie</h1>
+  <header class="naglowek">
+    <div class="kontener">
+      <h1>Programy StaryDooh</h1>
+      <p class="podtytul">Darmowe programy edukacyjne i narzędzia dla Windows. Kod źródłowy na <a href="https://github.com/StaryDooh">GitHub</a>.</p>
+      <label class="szukaj">
+        <span class="ukryty">Szukaj programu</span>
+        <input type="search" id="szukaj" placeholder="Szukaj programu, np. edytor, gra, labirynt…" autocomplete="off">
+      </label>
+    </div>
+  </header>
+
+  <main class="kontener">
+    <ul class="karty" id="lista">
+
+      <!-- ===== Jeden program = jeden blok <li>. Skopiuj blok, aby dodać kolejny. ===== -->
+      <li class="karta" data-szukaj="gra labirynt żółw krab pies dzieci pygame">
+        <h2><a href="programy/labiryntol.html">LabiryntOL</a></h2>
+        <p>Gra dla dzieci: poprowadź żółwika przez labirynt do wyjścia i uciekaj przed krabami. Piesek pomocnik potrafi zatrzymać kraby.</p>
+        <ul class="tagi"><li>gra</li><li>dla dzieci</li><li>Windows</li></ul>
+        <div class="przyciski">
+          <a class="btn btn-glowny" href="https://github.com/StaryDooh/LabiryntOL/releases/latest">Pobierz najnowszą wersję</a>
+          <a class="btn" href="programy/labiryntol.html">Szczegóły</a>
+        </div>
+      </li>
+
+      <li class="karta" data-szukaj="tabliczka mnożenia mnożenie matematyka strzelnica gra szkoła dzieci rekordy">
+        <h2><a href="programy/mktabliczka.html">mkTabliczka</a></h2>
+        <p>Strzelnica „Mnożenie” – gra do ćwiczenia tabliczki mnożenia z tabelą rekordów wspólną dla wszystkich użytkowników komputera.</p>
+        <ul class="tagi"><li>gra</li><li>matematyka</li><li>Windows</li></ul>
+        <div class="przyciski">
+          <a class="btn btn-glowny" href="https://github.com/StaryDooh/mkTabliczka/releases/latest">Pobierz najnowszą wersję</a>
+          <a class="btn" href="programy/mktabliczka.html">Szczegóły</a>
+        </div>
+      </li>
+
+      <li class="karta" data-szukaj="edytor tekstu dzieci szkoła klasy 1-3 nauka pisania odt pdf mked">
+        <h2><a href="programy/mkedytor.html">mkEdytor</a></h2>
+        <p>Prosty edytor tekstu do nauki pracy z edytorem w klasach 1–3. Eksport do ODT, PDF i HTML.</p>
+        <ul class="tagi"><li>edukacja</li><li>klasy 1–3</li><li>Windows</li></ul>
+        <div class="przyciski">
+          <a class="btn btn-glowny" href="https://github.com/StaryDooh/mkEdytor/releases/latest">Pobierz najnowszą wersję</a>
+          <a class="btn" href="programy/mkedytor.html">Szczegóły</a>
+        </div>
+      </li>
+
+      <li class="karta" data-szukaj="edytor html css strony www kod podświetlanie składni nauka programowania informatyka">
+        <h2><a href="programy/mkhtml.html">mkHTML</a></h2>
+        <p>Edytor HTML i CSS z podświetlaniem składni, zakładkami, motywami i podglądem strony w przeglądarce.</p>
+        <ul class="tagi"><li>programowanie</li><li>HTML/CSS</li><li>Windows</li></ul>
+        <div class="przyciski">
+          <a class="btn btn-glowny" href="https://github.com/StaryDooh/mkHTML/releases/latest">Pobierz najnowszą wersję</a>
+          <a class="btn" href="programy/mkhtml.html">Szczegóły</a>
+        </div>
+      </li>
+
+      <li class="karta" data-szukaj="edytor python programowanie kod uczniowie nauka programowania informatyka">
+        <h2><a href="programy/mkpyedek.html">mkPyEdek</a></h2>
+        <p>Prosty edytor kodu w Pythonie dla uczniów – pisanie i uruchamianie programów w jednym oknie.</p>
+        <ul class="tagi"><li>programowanie</li><li>Python</li><li>Windows</li></ul>
+        <div class="przyciski">
+          <a class="btn btn-glowny" href="https://github.com/StaryDooh/mkPyEdek/releases/latest">Pobierz najnowszą wersję</a>
+          <a class="btn" href="programy/mkpyedek.html">Szczegóły</a>
+        </div>
+      </li>
+
+      <!-- ===== koniec listy programów ===== -->
+
+    </ul>
+    <p class="brak-wynikow" id="brak" hidden>Nie znaleziono programu o tej nazwie.</p>
+  </main>
+
+  <footer class="stopka">
+    <div class="kontener">
+      <p>Programy są darmowe (freeware) i udostępniane w obecnej postaci. © StaryDooh · <a href="https://github.com/StaryDooh">github.com/StaryDooh</a></p>
+    </div>
+  </footer>
+
+  <script src="js/szukaj.js" defer></script>
 </body>
 </html>

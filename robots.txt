@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /programy/_szablon.html
+
+Sitemap: https://starydooh.github.io/sitemap.xml
